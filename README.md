@@ -1,5 +1,6 @@
 # Consulta de CEP
 A aplicação que exibe o endereço com base em um CEP passado pela pessoa usuária, a partir da API ViaCEP.
+<img src="./consulta-cep.png">
 
 ## :computer: Visualize este projeto:
 Acesse a página aqui:

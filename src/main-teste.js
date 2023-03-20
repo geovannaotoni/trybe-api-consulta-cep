@@ -1,6 +1,6 @@
-import './style.css';
-import Swal from 'sweetalert2/dist/sweetalert2.min';
-import '@sweetalert2/theme-dark/dark.css';
+// import './style.css';
+// import Swal from 'sweetalert2/dist/sweetalert2.min';
+// import '@sweetalert2/theme-dark/dark.css';
 
 const consultBtn = document.getElementById('consult');
 const input = document.getElementsByTagName('input')[0];
@@ -30,19 +30,3 @@ export const getAddress = async () => {
 };
 
 consultBtn.addEventListener('click', getAddress);
-
-/*
-outra forma:
-try {
-    const result = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-    const data = await result.json();
-
-    if (data.erro) throw new Error('Erro de cep inválido');
-
-    preEl.innerHTML = JSON.stringify(data);
-    console.log(data);
-    return data;
-  } catch (error) {
-    Swal.fire('Ops', error.message, 'error');
-  }
-*/
